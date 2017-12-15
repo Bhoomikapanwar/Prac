@@ -18,15 +18,11 @@ int main() {
 	    for(int i=0;i<len;i++)
 	    {
 	        int j=((len-2)+i)%len;
-	        if(a[i]==b[j] || a[i]==b[(i+2)%len])
-	        {
-	            
-	        }
-	        else
+	        if(a[i]!=b[j] && a[i]!=b[(i+2)%len])
 	        {
 	        flag=0;
-	        break;
-	        }
+	        break;   
+		}
 	    }
 	    }
 	    if(flag==0)
